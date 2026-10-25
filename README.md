@@ -7,19 +7,19 @@
 
 **Real-time network threat detection with rule-based classification and AI-powered explanations.**
 
-A college MVP demonstrating "glass box" AI security - combining proven signature-based detection (Suricata + Zeek) with real-time AI explanations via OpenAI API.
+A MVP demonstrating "glass box" AI security - combining proven signature-based detection (Suricata + Zeek) with real-time AI explanations via OpenAI API.
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 ### Key Features
-- ✅ **5-Sensor Architecture** - Zeek, Suricata, Wazuh, osquery, Vector
-- ✅ **Rule-based Detection** - 25+ Suricata signatures + Zeek behavioral thresholds (95%+ accuracy)
-- ✅ **Real-time Dashboard** - Live threat feed with WebSocket updates
-- ✅ **AI Explanations** - Dynamic incident analysis via OpenAI API
-- ✅ **3-Page UI** - Dashboard → Incident Details → AI Chat
-- ✅ **End-to-End Testing** - Complete test suite for full data pipeline
+- **5-Sensor Architecture** - Zeek, Suricata, Wazuh, osquery, Vector
+- **Rule-based Detection** - 25+ Suricata signatures + Zeek behavioral thresholds (95%+ accuracy)
+- **Real-time Dashboard** - Live threat feed with WebSocket updates
+- **AI Explanations** - Dynamic incident analysis via OpenAI API
+- **3-Page UI** - Dashboard → Incident Details → AI Chat
+- **End-to-End Testing** - Complete test suite for full data pipeline
 
 ### Attack Detection Coverage
 - **DDoS/Flooding** - High packet rate detection
@@ -31,7 +31,7 @@ A college MVP demonstrating "glass box" AI security - combining proven signature
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -67,7 +67,7 @@ A college MVP demonstrating "glass box" AI security - combining proven signature
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 XAI-IDS/
@@ -140,7 +140,7 @@ XAI-IDS/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - **Windows 11** with WSL2 Ubuntu
@@ -150,62 +150,7 @@ XAI-IDS/
 - **Node.js 18+**
 - **OpenAI API Key** - [Get from OpenAI](https://platform.openai.com/api-keys)
 
-### 1. Setup Backend
-
-```powershell
-# Navigate to project
-cd F:\kiruthika-2
-
-# Create Python virtual environment
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-
-# Install dependencies
-cd backend
-pip install -r requirements.txt
-
-# Setup environment
-copy ..\.env.example ..\.env
-# Edit .env and add your OPENAI_API_KEY
-```
-
-### 2. Setup Database
-
-```powershell
-# Create database (using psql)
-createdb xai_ids
-
-# Apply schema
-psql xai_ids -f backend/database/schema.sql
-```
-
-### 3. Setup Frontend
-
-```powershell
-cd frontend
-npm install
-npm run dev
-```
-
-### 4. Start Backend
-
-```powershell
-cd backend
-python main.py
-```
-
-### 5. Start Sensors (in WSL2)
-
-```bash
-# In WSL2 terminal
-cd /opt/xai-ids
-./sensors/install.sh        # Install sensors
-./sensors/manage_sensors.sh start  # Start all sensors
-```
-
----
-
-## 📊 Sensor Configuration
+## Sensor Configuration
 
 ### Zeek (Network Analysis)
 - **Location**: WSL2
@@ -337,7 +282,7 @@ python backend/scripts/seed_demo_data.py --clear --count 20
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 - **Implementation Plan**: `XAI_IDS_Implementation_Plan.md`
 - **Backend Spec**: `XAI_IDS_Backend_Specification.md`
@@ -346,9 +291,9 @@ python backend/scripts/seed_demo_data.py --clear --count 20
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-This is a college MVP project. For improvements:
+This is a MVP project. For improvements:
 1. Fork the repository
 2. Create a feature branch
 3. Submit a pull request
@@ -371,4 +316,4 @@ MIT License - See LICENSE file for details
 
 ---
 
-**Built for educational purposes** | **Version 1.0** | **Last Updated: January 2026**
+**Last Updated: October 2026**
