@@ -231,7 +231,7 @@ python backend/scripts/seed_demo_data.py --clear --count 20
 
 ---
 
-## 🔌 API Reference
+## API Reference
 
 ### Dashboard APIs
 - `GET /api/dashboard/alerts` - List incidents with filters
@@ -258,7 +258,7 @@ python backend/scripts/seed_demo_data.py --clear --count 20
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Backend won't start
 - Check PostgreSQL is running: `pg_isready`
@@ -300,13 +300,13 @@ This is a MVP project. For improvements:
 
 ---
 
-## 📄 License
+## License
 
 MIT License - See LICENSE file for details
 
 ---
 
-## 🎓 Acknowledgments
+## Acknowledgments
 
 - Suricata - [https://suricata.io](https://suricata.io)
 - Zeek - [https://zeek.org](https://zeek.org)
