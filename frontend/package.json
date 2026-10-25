@@ -1,0 +1,32 @@
+{
+  "name": "xai-ids-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build-and-serve": "vite build && cd ../backend && python main.py",
+    "gen:api-schema": "python ../backend/scripts/export_openapi.py",
+    "gen:api-types": "npm run gen:api-schema && openapi-typescript ../backend/openapi.json -o src/types/api.generated.d.ts"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "axios": "^1.6.0",
+    "socket.io-client": "^4.7.0",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.16",
+    "openapi-typescript": "^7.10.1",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "vite": "^5.0.0"
+  }
+}
