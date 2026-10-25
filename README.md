@@ -184,7 +184,7 @@ XAI-IDS/
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### End-to-End Tests
 
